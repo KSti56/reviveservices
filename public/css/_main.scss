@@ -1,0 +1,63 @@
+main {
+    .cards {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-column-gap: 3%;
+        height: $card-height;
+        .card {
+            background-color: $card-background;
+            border: 7px solid $card-background;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .title {
+                font-size: 20px;
+                color: $card-title-color;
+                font-weight: bold;
+            }
+            hr {
+                width: 60%;
+                border: 1px solid $card-line-color;
+                margin-top: 5px;
+            }
+            .text {
+                text-align: center;
+                margin-top: 10px;
+            }
+            .view {
+                background-color: $view-button-backgound;
+                border: 5px solid $view-button-backgound;
+                border-radius: 7px;
+                width: 50%;
+                padding: 5px;
+
+                color: white;
+                font-weight: bold;
+                text-align: center;
+                margin-top: auto;
+                margin-bottom: 5px;
+
+                transition: width, border-width 0.45s ease-in-out;
+            }
+            transition: transform 0.3s ease-in-out;
+            &:hover {
+                background-color: #303030;
+                border: 7px solid #303030;
+                transform: translateY(-3%);
+
+                .view {
+                    width: 60%;
+                    border-width: 15px;
+                }
+            }
+        }
+    }
+    .cards:first-of-type {
+        position: relative;
+        bottom: 35px;
+    }
+}

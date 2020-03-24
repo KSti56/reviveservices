@@ -1,0 +1,32 @@
+nav {
+    display: flex;
+    align-items: center;
+    min-height: $nav-height;
+
+    .logo {
+        width: $logo-size;
+    }
+
+    .company-name {
+        text-align: center;
+        color: $company-name-color;
+        font-weight: bold;
+    }
+
+    .links {
+        margin-left: auto;
+        margin-right: $links-margin-right;
+    }
+
+    .links > * {
+        margin-right: $links-gap;
+
+        &:hover {
+            color: #888888;
+        }
+    }
+
+    .links > .selected {
+        color: $current-page-link-color;
+    }
+}

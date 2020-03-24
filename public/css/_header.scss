@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 40%;
+
+    background-color: $header-background;
+    color: $header-main-text-color;
+
+    h1 {
+        font-size: $header-main-text-font-size;
+    }
+    p {
+        color: $header-sub-text-color;
+        font-size: $header-sub-text-font-size;
+    }
+
+    a {
+        color: $discord-button-text;
+        margin: 50px;
+        background-color: $discord-button-background;
+        border: 10px solid $discord-button-background;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+}
