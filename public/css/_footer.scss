@@ -1,0 +1,33 @@
+footer {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+
+    background-color: $footer-background;
+
+    .links {
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        a {
+            width: 10%;
+            margin: 5px;
+            font-size: 18px;
+            color: white;
+            display: flex;
+
+            p {
+                margin-left: 5px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .copyright {
+        margin-left: 15px;
+    }
+}
