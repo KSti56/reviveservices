@@ -13,5 +13,5 @@ app.get(['/', '/home'], (req, res) => {
 
 // Routers
 app.use('/redirect', require('./routes/redirects'))
-app.listen(8080);
-console.log('App listening at port 8080')
+app.listen(8083);
+console.log('App listening at port 8083')
