@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "corebot_addons.scss"
+    ],
+    "names": [],
+    "file": "corebot_addons.css"
+}

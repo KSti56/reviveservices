@@ -141,6 +141,7 @@ header h1 {
 header p {
   color: #b4b4b4;
   font-size: 25px;
+  text-shadow: #444444 1px 1px 15px;
 }
 
 header a {

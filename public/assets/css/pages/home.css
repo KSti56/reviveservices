@@ -1,0 +1,5 @@
+header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 29, 29, 0.45)), to(rgba(29, 29, 29, 0.45))), url("../../img/Background.png") center center/cover no-repeat;
+  background: linear-gradient(rgba(29, 29, 29, 0.45), rgba(29, 29, 29, 0.45)), url("../../img/Background.png") center center/cover no-repeat;
+}
+/*# sourceMappingURL=home.css.map */

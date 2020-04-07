@@ -15,6 +15,7 @@ header {
     p {
         color: $header-sub-text-color;
         font-size: $header-sub-text-font-size;
+        text-shadow: #444444 1px 1px 15px;
     }
 
     a {
