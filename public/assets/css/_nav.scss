@@ -51,8 +51,11 @@ nav {
         }
 
         .links {
+            // margin-top: 5    px;
+            padding: 5px;
+
             display: none;
-            display: absolute;
+            position: absolute;
             background-color: $dropdown-background-color;
             min-width: 160px;
             z-index: 1;
@@ -62,14 +65,12 @@ nav {
                 color: $main-text-color;
                 text-decoration: none;
                 display: block;
-                text-align: left;
+                text-align: center;
+                margin: 5px;
             }
 
-            &:hover {
-                background-color: $dropdown-hover-background-color;
-                a {
-                    color: $link-hover-color;
-                }
+            & > a:hover {
+                color: $link-hover-color;
             }
         }
 
