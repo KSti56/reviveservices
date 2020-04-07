@@ -13,20 +13,75 @@ nav {
         font-weight: bold;
     }
 
-    .links {
+    & > .links {
+        display: flex;
+
         margin-left: auto;
         margin-right: $links-margin-right;
     }
 
-    .links > * {
+    & > .links > * {
         margin-right: $links-gap;
 
         &:hover {
-            color: #888888;
+            color: $link-hover-color;
         }
     }
 
-    .links > .selected {
+    & > .links > *.selected {
         color: $current-page-link-color;
+    }
+
+    & > .links > .selected.our-work button {
+        color: $current-page-link-color;
+    }
+
+    .our-work {
+        button {
+            border: none;
+            outline: none;
+            color: #b4b4b4;
+            background-color: inherit;
+            font-size: 15px;
+            cursor: pointer;
+
+            &:hover {
+                color: $link-hover-color;
+            }
+        }
+
+        .links {
+            display: none;
+            display: absolute;
+            background-color: $dropdown-background-color;
+            min-width: 160px;
+            z-index: 1;
+
+            a {
+                float: none;
+                color: $main-text-color;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            &:hover {
+                background-color: $dropdown-hover-background-color;
+                a {
+                    color: $link-hover-color;
+                }
+            }
+        }
+
+        &:hover {
+            .links {
+                display: block;
+            }
+        }
+    }
+
+    // RESPONSIVE NAVIGATION
+    .responsive-icon {
+        display: none;
     }
 }

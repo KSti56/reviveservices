@@ -1,0 +1,93 @@
+// NAV
+@media screen and (max-width: 600px) {
+    nav {
+        & > .links > *:not(:first-child),
+        & > .our-work button {
+            display: none;
+        }
+
+        & > .responsive-icon {
+            float: right;
+            display: block;
+        }
+
+        &.responsive {
+            position: relative;
+            .responsive-icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .our-work {
+                float: none;
+
+                .links {
+                    position: relative;
+                }
+
+                button {
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+// CARDS
+@media screen and (max-width: 1200px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr) !important;
+        & > .card {
+            margin-bottom: 15px;
+        }
+    }
+
+    main {
+        min-height: 60vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    main {
+        min-height: 80vh;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    main {
+        min-height: 90vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cards {
+        grid-template-columns: 1fr !important;
+    }
+
+    main {
+        min-height: 125vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cards {
+        grid-template-columns: 1fr !important;
+    }
+
+    main {
+        min-height: 140vh;
+    }
+}

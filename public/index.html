@@ -5,12 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Revive Services - Home</title>
 
+        <!-- jQuery -->
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"
+        ></script>
+
         <!-- Material Icons -->
         <link
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet"
         />
 
+        <!-- FontAwesome -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+            rel="stylesheet"
+        />
         <!-- Font -->
         <link
             href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
@@ -44,7 +56,7 @@
         <meta property="og:site_name" content="Revive Services" />
         <meta name="theme-color" content="#167abf" />
 
-        <link rel="shortcut icon" type="image/png" href="/assets/logo.png"/>
+        <link rel="shortcut icon" type="image/png" href="/assets/logo.png" />
     </head>
     <body>
         <nav>
@@ -58,10 +70,31 @@
 
             <div class="links">
                 <a href="/" class="selected">Home</a>
-                <a href="#">Our Work</a>
+                <div class="dropdown our-work">
+                    <button class="btn">
+                        Our Work
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+
+                    <div class="links">
+                        <a href="/our-work/discord-bots">Discord Bots</a>
+                        <a href="/our-work/spigot-plugins">Spigot Plugins</a>
+                        <a href="/our-work/graphics">Graphics</a>
+                        <a href="/our-work/minecraft-builds"
+                            >Minecraft Builds</a
+                        >
+                    </div>
+                </div>
                 <a href="/redirect/discord">Discord</a>
                 <a href="#">Login</a>
             </div>
+
+            <a
+                href="javascript:void(0);"
+                class="responsive-icon"
+                onclick="toggleNavigation()"
+                >&#9776;</a
+            >
         </nav>
         <header>
             <h1>Revive Services</h1>
@@ -77,15 +110,41 @@
                     </p>
                     <hr />
                     <p class="text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Deserunt, repellat fugit itaque corporis velit
-                        nesciunt rerum commodi sint atque beatae?
+                        Our team has some incredible discord bot developers.
+                        These developers have years of experience making discord
+                        bots and provide high quality products.
                     </p>
                     <a href="/our-work/discord-bots" class="view">View</a>
                 </div>
                 <div class="card">
                     <p class="title">
-                        Discord Bots
+                        Spigot Plugins
+                    </p>
+                    <hr />
+                    <p class="text">
+                        Our team has years of experience developing spigot
+                        plugins. They also have tons of experience with
+                        Minecraft Servers, so they know what you expect from a
+                        plugin.
+                    </p>
+                    <a href="/our-work/spigot-plugins" class="view">View</a>
+                </div>
+                <div class="card">
+                    <p class="title">
+                        Graphics
+                    </p>
+                    <hr />
+                    <p class="text">
+                        Our amazing graphics team can create anything you
+                        invision, even if you can't quite decide. They try their
+                        best to provide you with top quaility graphics for
+                        anything you need.
+                    </p>
+                    <a href="/our-work/graphics" class="view">View</a>
+                </div>
+                <div class="card">
+                    <p class="title">
+                        Minecraft Builds
                     </p>
                     <hr />
                     <p class="text">
@@ -93,43 +152,20 @@
                         elit. Deserunt, repellat fugit itaque corporis velit
                         nesciunt rerum commodi sint atque beatae?
                     </p>
-                    <a href="/our-work/discord-bots" class="view">View</a>
+                    <a href="/our-work/minecraft-builds" class="view">View</a>
                 </div>
                 <div class="card">
                     <p class="title">
-                        Discord Bots
+                        Corebot Addons
                     </p>
                     <hr />
                     <p class="text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Deserunt, repellat fugit itaque corporis velit
-                        nesciunt rerum commodi sint atque beatae?
+                        Our team creates custom addons for
+                        <a href="https://corebot.dev/mcm">Corebot</a>. These
+                        addons are the highest of quality because these
+                        developers are the main developers of the bot.
                     </p>
-                    <a href="/our-work/discord-bots" class="view">View</a>
-                </div>
-                <div class="card">
-                    <p class="title">
-                        Discord Bots
-                    </p>
-                    <hr />
-                    <p class="text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Deserunt, repellat fugit itaque corporis velit
-                        nesciunt rerum commodi sint atque beatae?
-                    </p>
-                    <a href="/our-work/discord-bots" class="view">View</a>
-                </div>
-                <div class="card">
-                    <p class="title">
-                        Discord Bots
-                    </p>
-                    <hr />
-                    <p class="text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Deserunt, repellat fugit itaque corporis velit
-                        nesciunt rerum commodi sint atque beatae?
-                    </p>
-                    <a href="/our-work/discord-bots" class="view">View</a>
+                    <a href="/our-work/corebot-addons" class="view">View</a>
                 </div>
             </div>
         </main>
@@ -150,6 +186,6 @@
                 Copyright © 2020 Revive Services. All Rights Reserved.
             </p>
         </footer>
-        <script></script>
+        <script src="/js/main.js"></script>
     </body>
 </html>
