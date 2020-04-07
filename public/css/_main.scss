@@ -1,8 +1,7 @@
 main {
     min-height: -webkit-fill-available;
     .cards {
-        min-height: 35%;
-        max-height: 100%;
+        height: auto;
         width: 80%;
         margin: auto;
         display: grid;
