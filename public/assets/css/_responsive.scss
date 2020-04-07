@@ -50,16 +50,28 @@
             margin-bottom: 15px;
         }
     }
+
+    .cards:first-of-type {
+        transform: translateY(-10%) !important;
+    }
 }
 
 @media screen and (max-width: 1000px) {
     .cards {
         grid-template-columns: repeat(2, 1fr) !important;
     }
+
+    .cards:first-of-type {
+        transform: translateY(-5%) !important;
+    }
 }
 
 @media screen and (max-width: 700px) {
     .cards {
         grid-template-columns: 1fr !important;
+    }
+
+    .cards:first-of-type {
+        transform: translateY(-2%) !important;
     }
 }

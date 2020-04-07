@@ -7,7 +7,6 @@ main {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-column-gap: 3%;
-        height: $card-height;
         .card {
             background-color: $card-background;
             border: 7px solid $card-background;
@@ -29,6 +28,7 @@ main {
             .text {
                 text-align: center;
                 margin-top: 10px;
+                margin-bottom: 20px;
 
                 a {
                     color: $card-a-tag-color;
@@ -61,7 +61,23 @@ main {
             }
         }
     }
-    .cards:first-of-type {
+    .cards {
         transform: translateY(-15%);
+    }
+
+    .projects {
+        width: 95%;
+        height: 100%;
+
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+
+        display: inline-grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3%;
+
+        img {
+            width: 100%;
+        }
     }
 }

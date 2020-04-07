@@ -1,0 +1,41 @@
+<nav>
+    <img
+        src="<%= level %>/img/logo.png"
+        alt="Revive Services Logo"
+        class="logo"
+        onclick="window.location.href = '<%= level %>/'"
+    />
+    <p class="company-name">Revive Services</p>
+
+    <div class="links">
+        <a href="<%= level %>/" class="link-home">Home</a>
+        <div class="dropdown our-work link-our-work">
+            <button class="btn">
+                Our Work
+                <i class="fa fa-caret-down"></i>
+            </button>
+
+            <div class="links">
+                <a href="<%= level %>/our-work/discord-bots">Discord Bots</a>
+                <a href="<%= level %>/our-work/spigot-plugins">Spigot Plugins</a>
+                <a href="<%= level %>/our-work/graphics">Graphics</a>
+                <a href="<%= level %>/our-work/minecraft-builds">Minecraft Builds</a>
+            </div>
+        </div>
+        <a href="<%= level %>/redirect/discord" class="link-discord">Discord</a>
+        <a href="#" class="link-login">Login</a>
+    </div>
+
+    <a
+        href="javascript:void(0);"
+        class="responsive-icon"
+        onclick="toggleNavigation()"
+        >&#9776;</a
+    >
+
+    <script>
+        const currentPage = "<%= page %>";
+        const link = document.querySelector(".link-" + currentPage);
+        if (link) link.classList.add("selected");
+    </script>
+</nav>

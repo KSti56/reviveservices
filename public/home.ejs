@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('includes/head', { page: 'Home', level: '.' }) %>
+    <body>
+        <%- include('includes/navigation', { page: 'home', level: '.' }) %>
+
+        <header>
+            <h1>Revive Services</h1>
+            <p>The service team that will satisfy your needs.</p>
+            <a href="/redirect/discord" class="discord">Join our discord</a>
+        </header>
+
+        <main>
+            <div class="cards">
+                <div class="card">
+                    <p class="title">
+                        Discord Bots
+                    </p>
+                    <hr />
+                    <p class="text">
+                        Our team has some incredible discord bot developers.
+                        These developers have years of experience making discord
+                        bots and provide high quality products.
+                    </p>
+                    <a href="/our-work/discord-bots" class="view">View</a>
+                </div>
+                <div class="card">
+                    <p class="title">
+                        Spigot Plugins
+                    </p>
+                    <hr />
+                    <p class="text">
+                        Our team has years of experience developing spigot
+                        plugins. They also have tons of experience with
+                        Minecraft Servers, so they know what you expect from a
+                        plugin.
+                    </p>
+                    <a href="/our-work/spigot-plugins" class="view">View</a>
+                </div>
+                <div class="card">
+                    <p class="title">
+                        Graphics
+                    </p>
+                    <hr />
+                    <p class="text">
+                        Our amazing graphics team can create anything you
+                        invision, even if you can't quite decide. They try their
+                        best to provide you with top quaility graphics for
+                        anything you need.
+                    </p>
+                    <a href="/our-work/graphics" class="view">View</a>
+                </div>
+                <div class="card">
+                    <p class="title">
+                        Minecraft Builds
+                    </p>
+                    <hr />
+                    <p class="text">
+                        Our builders can make your dream builds come to life.
+                        These builds are truly amazing, using a variety of
+                        blocks and color pallets.
+                    </p>
+                    <a href="/our-work/minecraft-builds" class="view">View</a>
+                </div>
+                <div class="card">
+                    <p class="title">
+                        Corebot Addons
+                    </p>
+                    <hr />
+                    <p class="text">
+                        Our team creates custom addons for
+                        <a href="https://corebot.dev/mcm">Corebot</a>. These
+                        addons are the highest of quality because these
+                        developers are the main developers of the bot.
+                    </p>
+                    <a href="/our-work/corebot-addons" class="view">View</a>
+                </div>
+            </div>
+        </main>
+
+        <%- include('includes/footer', { level: '.' }) %>
+        <script src="js/main.js"></script>
+    </body>
+</html>
