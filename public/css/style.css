@@ -155,7 +155,7 @@ header a {
 }
 
 main {
-  min-height: 50vh;
+  min-height: -webkit-fill-available;
 }
 
 main .cards {
