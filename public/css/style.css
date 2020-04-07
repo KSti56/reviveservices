@@ -155,7 +155,7 @@ header a {
 }
 
 main {
-  height: 50vh;
+  min-height: 50vh;
 }
 
 main .cards {
@@ -355,9 +355,6 @@ body {
   .cards > .card {
     margin-bottom: 15px;
   }
-  main {
-    min-height: 60vh;
-  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -365,34 +362,12 @@ body {
     -ms-grid-columns: (1fr)[2] !important;
         grid-template-columns: repeat(2, 1fr) !important;
   }
-  main {
-    min-height: 80vh;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  main {
-    min-height: 90vh;
-  }
 }
 
 @media screen and (max-width: 700px) {
   .cards {
     -ms-grid-columns: 1fr !important;
         grid-template-columns: 1fr !important;
-  }
-  main {
-    min-height: 125vh;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .cards {
-    -ms-grid-columns: 1fr !important;
-        grid-template-columns: 1fr !important;
-  }
-  main {
-    min-height: 140vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
