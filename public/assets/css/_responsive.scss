@@ -1,42 +1,14 @@
 // NAV
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     nav {
-        & > .links > *:not(:first-child),
-        & > .our-work button {
-            display: none;
-        }
-
-        & > .responsive-icon {
-            float: right;
-            display: block;
-        }
-
-        &.responsive {
-            position: relative;
-            .responsive-icon {
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-
-            a {
-                float: none;
+        .links {
+            .burger {
                 display: block;
-                text-align: left;
             }
 
-            .our-work {
-                float: none;
-
-                .links {
-                    position: relative;
-                }
-
-                button {
-                    display: block;
-                    width: 100%;
-                    text-align: left;
-                }
+            a,
+            button {
+                display: none;
             }
         }
     }

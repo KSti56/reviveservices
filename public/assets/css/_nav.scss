@@ -82,7 +82,14 @@ nav {
     }
 
     // RESPONSIVE NAVIGATION
-    .responsive-icon {
+    .burger div {
+        width: 25px;
+        height: 2.25px;
+
+        background-color: white;
+        margin: 6px 0;
+    }
+    .burger {
         display: none;
     }
 }

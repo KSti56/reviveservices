@@ -110,7 +110,14 @@ nav .our-work:hover .links {
   display: block;
 }
 
-nav .responsive-icon {
+nav .burger div {
+  width: 25px;
+  height: 2.25px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+nav .burger {
   display: none;
 }
 
@@ -308,6 +315,24 @@ footer .copyright {
   margin-left: 15px;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3d3d3d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1078bc;
+  border: 5px solid #1078bc;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #02568d;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #b4b4b4;
@@ -325,38 +350,13 @@ body {
   min-height: 100%;
 }
 
-@media screen and (max-width: 600px) {
-  nav > .links > *:not(:first-child),
-  nav > .our-work button {
+@media screen and (max-width: 768px) {
+  nav .links .burger {
+    display: block;
+  }
+  nav .links a,
+  nav .links button {
     display: none;
-  }
-  nav > .responsive-icon {
-    float: right;
-    display: block;
-  }
-  nav.responsive {
-    position: relative;
-  }
-  nav.responsive .responsive-icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  nav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  nav.responsive .our-work {
-    float: none;
-  }
-  nav.responsive .our-work .links {
-    position: relative;
-  }
-  nav.responsive .our-work button {
-    display: block;
-    width: 100%;
-    text-align: left;
   }
 }
 

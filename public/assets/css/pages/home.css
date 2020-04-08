@@ -1,5 +1,51 @@
+/* NAV */
+/* HEADER */
+/* MAIN */
+/* FOOTER */
 header {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 29, 29, 0.45)), to(rgba(29, 29, 29, 0.45))), url("../../img/Background.png") center center/cover no-repeat;
   background: linear-gradient(rgba(29, 29, 29, 0.45), rgba(29, 29, 29, 0.45)), url("../../img/Background.png") center center/cover no-repeat;
+}
+
+main .tos {
+  background-color: #3a3a3a;
+  border: 3px solid #1b1b1b;
+  padding: 3vw;
+  border-radius: 10px;
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .tos h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: white;
+}
+
+main .tos .terms p {
+  text-align: center;
+}
+
+main .tos .terms h3 {
+  color: white;
+  text-align: center;
+}
+
+main .tos .terms li {
+  margin-top: 10px;
+}
+
+main .tos .terms li:nth-child(even) {
+  color: #979797;
 }
 /*# sourceMappingURL=home.css.map */
