@@ -39,6 +39,7 @@ nav {
 
 nav .logo {
   width: 64px;
+  cursor: pointer;
 }
 
 nav .company-name {
