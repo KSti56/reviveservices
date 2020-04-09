@@ -34,7 +34,8 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 6%;
+  height: 6vh;
+  background-color: #252525;
 }
 
 nav .logo {
@@ -116,10 +117,15 @@ nav .burger div {
   height: 2.25px;
   background-color: white;
   margin: 6px 0;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 nav .burger {
   display: none;
+  cursor: pointer;
 }
 
 header {
@@ -350,15 +356,88 @@ body {
   margin: 0;
   padding-bottom: 6rem;
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 768px) {
-  nav .links .burger {
+  nav .burger {
     display: block;
+    position: absolute;
+    right: 25px;
   }
-  nav .links a,
-  nav .links button {
-    display: none;
+  nav > .links {
+    z-index: 3;
+    width: 50vw;
+    margin: 0;
+    background-color: #252525;
+    position: absolute;
+    right: 0;
+    top: 6vh;
+    height: 94vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  }
+  nav > .links .our-work .links {
+    left: 50px;
+  }
+  nav > .links > a,
+  nav > .links > div button {
+    font-size: 20px;
+  }
+  nav > .links.nav-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .burger.x-toggled .ln-1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+            transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .burger.x-toggled .ln-2 {
+    opacity: 0;
+  }
+  .burger.x-toggled .ln-3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -6px);
+            transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+@-webkit-keyframes linkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes linkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 

@@ -9,7 +9,7 @@
 body {
     font-family: "Roboto", sans-serif;
     color: $main-text-color;
-    background-color: #2a2a2a;
+    background-color: $background-color;
 
     display: flex;
     flex-direction: column;
@@ -19,8 +19,7 @@ body {
     padding-bottom: 6rem;
     min-height: 100%;
 
-    footer {
-    }
+    overflow-x: hidden;
 }
 
 @import "./responsive";
